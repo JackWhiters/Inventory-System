@@ -59,7 +59,7 @@
                 LIHAT 
               </button>
             </div>
-            <img src="<?php echo base_url('assets/img/log.svg') ?>" class="image" alt="" />
+            <img src="<?php echo base_url('assets/img/picture.png') ?>" class="image" alt="" />
           </div>
           <div class="panel right-panel">
             <div class="content">
@@ -71,7 +71,7 @@
                 Login
               </button>
             </div>
-            <img src="<?php echo base_url('assets/img/register.svg') ?>" class="image" alt="" />
+            <img src="<?php echo base_url('assets/img/anggota.png') ?>" class="image" alt="" />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 # Inventory System
 
-Create an Inventory System using CodeIgniter, MySQL &amp; PHP
+Sistem Di Buat Dengan CodeIgniter, MySQL &amp; PHP
 
 # Screenshots
 

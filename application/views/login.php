@@ -9,6 +9,8 @@
     ></script>
     <link rel="stylesheet" href="<?php echo base_url('assets/style1.css') ?>" />
     <title>Sign in & Sign up Form</title>
+    <!-- Web Icon -->
+    <link rel="icon" href="<?php echo base_url('assets/images/inv.ico') ?>">
   </head>
   <body>
     <div class="container">
@@ -38,7 +40,7 @@
               <tr>
                 <td><h2>Jundi AL Hafidz (2020310084)</h2></td>
                 <td><h2>Fatih Alsena (2020310077)</h2></td>
-                <td><h2>Hafidz Kholifatur.R (2020310110)</h2></td>
+                <td><h2>Hafidz Kholifatur R (2020310110)</h2></td>
                 <td><h2>Annisa Sholehah (2020310087)</h2></td>
                 <td><h2>Ayu Medina Prameswari (2020320069)</h2></td>
                 <td><h2>Rizky pratama ramadhan (2020330027)</h2></td>

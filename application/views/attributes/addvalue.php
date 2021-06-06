@@ -101,7 +101,7 @@
         <div class="modal-footer">
           <input type="hidden" name="attribute_parent_id" id="attribute_parent_id" value="<?php echo $attribute_data['id']; ?>">
           <button type="button" class="btn btn-warning" data-dismiss="modal" style="background-color: #e74a3b; border: none;">Batal</button>
-          <button type="submit" class="btn btn-primary" style="background-color: #4e73df; border: none;">Simpan</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan</button>
         </div>
 
       </form>
@@ -134,7 +134,7 @@
         <div class="modal-footer">
           <input type="hidden" name="attribute_parent_id" id="attribute_parent_id" value="<?php echo $attribute_data['id']; ?>">
           <button type="button" class="btn btn-warning" data-dismiss="modal" style="background-color: #e74a3b; border: none;">Batal</button>
-          <button type="submit" class="btn btn-primary" style="background-color: #4e73df; border: none;">Simpan Perubahan</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan Perubahan</button>
         </div>
 
       </form>
@@ -159,7 +159,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-warning" data-dismiss="modal" style="background-color: #e74a3b; border: none;">Batal</button>
-          <button type="submit" class="btn btn-primary" style="background-color: #4e73df; border: none;">Konfirmasi</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Konfirmasi</button>
         </div>
       </form>
 

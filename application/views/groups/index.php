@@ -5,12 +5,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Groups</small>
+        Kelola
+        <small>Grup</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">groups</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+        <li class="active">Grup</li>
       </ol>
     </section>
 
@@ -33,22 +33,22 @@
           <?php endif; ?>
 
           <?php if(in_array('createGroup', $user_permission)): ?>
-            <a href="<?php echo base_url('groups/create') ?>" class="btn btn-primary" style="background-color: #4e73df; border: none;">Add Group</a>
+            <a href="<?php echo base_url('groups/create') ?>" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Tambah Grup</a>
             <br /> <br />
           <?php endif; ?>
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Manage Groups</h3>
+              <h3 class="box-title">Kelola Grup</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="groupTable" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Group Name</th>
+                  <th>Nama Grup</th>
                   <?php if(in_array('updateGroup', $user_permission) || in_array('deleteGroup', $user_permission)): ?>
-                    <th>Action</th>
+                    <th>Aksi</th>
                   <?php endif; ?>
                 </tr>
                 </thead>

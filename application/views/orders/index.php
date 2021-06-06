@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Orders</small>
+      Kelola
+      <small>Pesanan</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Orders</li>
+      <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+      <li class="active">Pesanan</li>
     </ol>
   </section>
 
@@ -35,28 +35,28 @@
         <?php endif; ?>
 
         <?php if(in_array('createOrder', $user_permission)): ?>
-          <a href="<?php echo base_url('orders/create') ?>" class="btn btn-primary" style="background-color: #4e73df; border: none;">Add Order</a>
+          <a href="<?php echo base_url('orders/create') ?>" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Add Order</a>
           <br /> <br />
         <?php endif; ?>
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Orders</h3>
+            <h3 class="box-title">Kelola Pesanan</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Bill no</th>
-                <th>Customer Name</th>
-                <th>Customer Phone</th>
-                <th>Date Time</th>
-                <th>Total Products</th>
-                <th>Total Amount</th>
-                <th>Paid status</th>
+                <th>No Tagihan</th>
+                <th>Nama Pelanggan</th>
+                <th>Tlp Pelanggan</th>
+                <th>Tanggal Waktu</th>
+                <th>Total Produk</th>
+                <th>Total Jumlah</th>
+                <th>Status Pembayaran</th>
                 <?php if(in_array('updateOrder', $user_permission) || in_array('viewOrder', $user_permission) || in_array('deleteOrder', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>Aksi</th>
                 <?php endif; ?>
               </tr>
               </thead>
@@ -84,16 +84,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remove Order</h4>
+        <h4 class="modal-title">Hapus Pesanan</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('orders/remove') ?>" method="post" id="removeForm">
         <div class="modal-body">
-          <p>Do you really want to remove?</p>
+          <p>Apakah kamu yakin ingin menghapus pesanan?</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal"  style="background: linear-gradient(to right, #d31027, #ea384d); border: none;">Batal</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Konfirmasi</button>
         </div>
       </form>
 

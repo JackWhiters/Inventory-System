@@ -10,7 +10,7 @@ class Category extends Admin_Controller
 
 		$this->not_logged_in();
 
-		$this->data['page_title'] = 'Category';
+		$this->data['page_title'] = 'Kategori';
 
 		$this->load->model('model_category');
 	}

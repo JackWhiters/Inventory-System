@@ -15,7 +15,7 @@ class Dashboard extends Admin_Controller
 		$this->load->model('model_users');
 		$this->load->model('model_stores');
 
-		$this->data['page_title'] = 'Stores';
+		$this->data['page_title'] = 'Inventory System';
 		$this->load->model('model_reports');
 	}
 

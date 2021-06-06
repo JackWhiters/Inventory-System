@@ -9,7 +9,7 @@
         <small>Control panel</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
         <li class="active">Dashboard</li>
       </ol>
     </section>
@@ -27,7 +27,7 @@
               <div class="small-box bg-aqua" style="border-radius : .35rem;">
                 
                 <div class="inner" style="background: linear-gradient(to right, #00c6ff, #0072ff);">
-                  <p>Total Products</p>
+                  <p>Total Produk</p>
 
                   <h3><?php echo $total_products ?></h3>                
                 </div>              
@@ -45,13 +45,13 @@
               <!-- small box -->
               <div class="small-box bg-green" style="border-radius : .35rem;">
                 <div class="inner"  style=" background: linear-gradient(to right, #fdc830, #f37335);">
-                  <p>Total Paid Orders</p>
+                  <p>Total Pesanan Dibayar</p>
                   
                   
                   <h3><?php echo $total_paid_orders ?></h3>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-stats-bars " style="color:#fff;"></i>
+                <i class="fas fa-chart-bar fa-xs" style="color:#fff;"></i>
                 </div>
                 <!-- <a href="<?php echo base_url('orders/') ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a> -->
               </div>
@@ -63,7 +63,7 @@
               <!-- small box -->
               <div class="small-box bg-yellow" style="border-radius : .35rem;">
                 <div class="inner" style="background: linear-gradient(to right, #38ef7d, #11998e);">
-                  <p>Total Users</p>
+                  <p>Total User</p>
 
 
                   <h3><?php echo $total_users; ?></h3>
@@ -81,7 +81,7 @@
               <!-- small box -->
               <div class="small-box bg-red" style="border-radius : .35rem;">
                 <div class="inner" style=" background: linear-gradient(to right, #ff512f, #dd2476);">
-                  <p>Total Stores</p>
+                  <p>Total Toko</p>
 
 
                   <h3><?php echo $total_stores ?></h3>
@@ -111,14 +111,14 @@
         <div class="col-md-12">
           <form class="form-inline" action="<?php echo base_url('dashboard/') ?>" method="POST">
             <div class="form-group">
-              <label for="date">Year</label>
+              <label for="date">Tahun</label>
               <select class="form-control" name="select_year" id="select_year">
                 <?php foreach ($report_years as $key => $value): ?>
                   <option value="<?php echo $value ?>" <?php if($value == $selected_year) { echo "selected"; } ?>><?php echo $value; ?></option>
                 <?php endforeach ?>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary" style="background-color: #4e73df; border: none;">Submit</button>
+            <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Kirim</button>
           </form>
         </div>
 
@@ -127,13 +127,13 @@
                  <div class="col-md-6 ">
            <div class="box" >
             <div class="box-header">
-              <h3 class="box-title">Total Paid Orders - Report Data</h3>
+              <h3 class="box-title">Total Pembayaran Pesanan - Laporan Data</h3>
             </div>
            <div class="box-body">
               <table id="datatables" class="table table-bordered table-striped table responsive-sm  " >
                 <tr>
-                  <th>Month - Year</th> 
-                  <th>Amount</th>
+                  <th>Bulan - Tahun</th> 
+                  <th>Jumlah</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -153,7 +153,7 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <th>Total Amount</th>
+                    <th>Total Jumlah</th>
                     <th>
                       <?php //echo $company_currency . ' ' . array_sum($parking_data); ?>
                       <?php echo array_sum($results); ?>
@@ -184,7 +184,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Parking - Report</h3>
+              <h3 class="box-title">Total - Laporan</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -251,9 +251,9 @@
     var barChartCanvas                   = $('#barChart').get(0).getContext('2d')
     var barChart                         = new Chart(barChartCanvas)
     var barChartData                     = areaChartData
-    barChartData.datasets[0].fillColor   = '#00f5d4';
-    barChartData.datasets[0].strokeColor = '#00f5d4';
-    barChartData.datasets[0].pointColor  = '#00f5d4';
+    barChartData.datasets[0].fillColor   = '#2fdb81';
+    barChartData.datasets[0].strokeColor = '#2fdb81';
+    barChartData.datasets[0].pointColor  = '#2fdb81';
     var barChartOptions                  = {
       //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
       scaleBeginAtZero        : true,

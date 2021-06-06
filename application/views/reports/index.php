@@ -5,11 +5,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Reports
+        Laporan
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Reports</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+        <li class="active">Laporan</li>
       </ol>
     </section>
 
@@ -28,7 +28,7 @@
                 <?php endforeach ?>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary" style="background-color: #4e73df; border: none;">Submit</button>
+            <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Submit</button>
           </form>
         </div>
 
@@ -51,7 +51,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Parking - Report</h3>
+              <h3 class="box-title">Total - Laporan</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -64,15 +64,15 @@
           <!-- /.box -->
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Total Paid Orders - Report Data</h3>
+              <h3 class="box-title">Total Pembayaran Pesanan - Laporan Data</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table id="datatables" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Month - Year</th>
-                  <th>Amount</th>
+                  <th>Bulan - Tahun</th>
+                  <th>Jumlah</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -92,7 +92,7 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <th>Total Amount</th>
+                    <th>Total Jumlah</th>
                     <th>
                       <?php //echo $company_currency . ' ' . array_sum($parking_data); ?>
                       <?php echo array_sum($results); ?>

@@ -5,13 +5,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Groups</small>
+        Kelola
+        <small>Grup</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="<?php echo base_url('groups/') ?>">Groups</a></li>
-        <li class="active">Delete</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+        <li><a href="<?php echo base_url('groups/') ?>">Grup</a></li>
+        <li class="active">Hapus</li>
       </ol>
     </section>
 
@@ -33,11 +33,11 @@
             </div>
           <?php endif; ?>
 
-          <h1>Do you really want to remove ?</h1>
+          <h1>Apakah kamu yakin ingin menghapus ?</h1>
 
           <form action="<?php echo base_url('groups/delete/'.$id) ?>" method="post">
-            <input type="submit" class="btn btn-primary" name="confirm" value="Confirm">
-            <a href="<?php echo base_url('groups') ?>" class="btn btn-warning">Cancel</a>
+            <input type="submit" class="btn btn-primary" name="confirm" value="Kofirmasi" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">
+            <a href="<?php echo base_url('groups') ?>" class="btn btn-warning" style="background: linear-gradient(to right, #d31027, #ea384d); border: none;">Batal</a>
           </form>
 
         </div>

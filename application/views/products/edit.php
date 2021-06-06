@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Products</small>
+      Kelola
+      <small>Produk</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Products</li>
+      <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+      <li class="active">Produk</li>
     </ol>
   </section>
 
@@ -37,7 +37,7 @@
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Edit Product</h3>
+            <h3 class="box-title">Edit Produk</h3>
           </div>
           <!-- /.box-header -->
           <form role="form" action="<?php base_url('users/update') ?>" method="post" enctype="multipart/form-data">
@@ -46,43 +46,33 @@
                 <?php echo validation_errors(); ?>
 
                 <div class="form-group">
-                  <label>Image Preview: </label>
+                  <label>Pratinjau Gambar: </label>
                   <img src="<?php echo base_url() . $product_data['image'] ?>" width="150" height="150" class="img-circle">
                 </div>
 
                 <div class="form-group">
-                  <label for="product_image">Update Image</label>
-                  <div class="kv-avatar">
-                      <div class="file-loading">
-                          <input id="product_image" name="product_image" type="file">
-                      </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="product_name">Product name</label>
-                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Enter product name" value="<?php echo $product_data['name']; ?>"  autocomplete="off"/>
+                  <label for="product_name">Nama Produk</label>
+                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Masukan Nama Produk" value="<?php echo $product_data['name']; ?>"  autocomplete="off"/>
                 </div>
 
                 <div class="form-group">
                   <label for="sku">SKU</label>
-                  <input type="text" class="form-control" id="sku" name="sku" placeholder="Enter sku" value="<?php echo $product_data['sku']; ?>" autocomplete="off" />
+                  <input type="text" class="form-control" id="sku" name="sku" placeholder="Masukan sku" value="<?php echo $product_data['sku']; ?>" autocomplete="off" />
                 </div>
 
                 <div class="form-group">
-                  <label for="price">Price</label>
-                  <input type="text" class="form-control" id="price" name="price" placeholder="Enter price" value="<?php echo $product_data['price']; ?>" autocomplete="off" />
+                  <label for="price">Harga</label>
+                  <input type="text" class="form-control" id="price" name="price" placeholder="Masukan Harga" value="<?php echo $product_data['price']; ?>" autocomplete="off" />
                 </div>
 
                 <div class="form-group">
                   <label for="qty">Qty</label>
-                  <input type="text" class="form-control" id="qty" name="qty" placeholder="Enter Qty" value="<?php echo $product_data['qty']; ?>" autocomplete="off" />
+                  <input type="text" class="form-control" id="qty" name="qty" placeholder="Masukan Qty" value="<?php echo $product_data['qty']; ?>" autocomplete="off" />
                 </div>
 
                 <div class="form-group">
-                  <label for="description">Description</label>
-                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Enter 
-                  description" autocomplete="off">
+                  <label for="description">Deskripsi</label>
+                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Masukan Deskripsi" autocomplete="off">
                     <?php echo $product_data['description']; ?>
                   </textarea>
                 </div>
@@ -102,7 +92,7 @@
                 <?php endif; ?>
 
                 <div class="form-group">
-                  <label for="brands">Brands</label>
+                  <label for="brands">Merek</label>
                   <?php $brand_data = json_decode($product_data['brand_id']); ?>
                   <select class="form-control select_group" id="brands" name="brands[]" multiple="multiple">
                     <?php foreach ($brands as $k => $v): ?>
@@ -112,7 +102,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="category">Category</label>
+                  <label for="category">Kategori</label>
                   <?php $category_data = json_decode($product_data['category_id']); ?>
                   <select class="form-control select_group" id="category" name="category[]" multiple="multiple">
                     <?php foreach ($category as $k => $v): ?>
@@ -122,7 +112,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Store</label>
+                  <label for="store">Toko</label>
                   <select class="form-control select_group" id="store" name="store">
                     <?php foreach ($stores as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>" <?php if($product_data['store_id'] == $v['id']) { echo "selected='selected'"; } ?> ><?php echo $v['name'] ?></option>
@@ -131,7 +121,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Availability</label>
+                  <label for="store">Ketersediaan</label>
                   <select class="form-control" id="availability" name="availability">
                     <option value="1" <?php if($product_data['availability'] == 1) { echo "selected='selected'"; } ?>>Yes</option>
                     <option value="2" <?php if($product_data['availability'] != 1) { echo "selected='selected'"; } ?>>No</option>
@@ -144,8 +134,8 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Save Changes</button>
-                <a href="<?php echo base_url('users/') ?>" class="btn btn-warning">Back</a>
+                <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan Perubahan</button>
+                <a href="<?php echo base_url('users/') ?>" class="btn btn-warning" style="background: linear-gradient(to right, #d31027, #ea384d); border: none;">Batal</a>
               </div>
             </form>
           <!-- /.box-body -->

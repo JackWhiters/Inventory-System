@@ -10,7 +10,7 @@ class Orders extends Admin_Controller
 
 		$this->not_logged_in();
 
-		$this->data['page_title'] = 'Orders';
+		$this->data['page_title'] = 'Pesanan';
 
 		$this->load->model('model_orders');
 		$this->load->model('model_products');

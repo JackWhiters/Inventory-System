@@ -9,8 +9,8 @@
       <small>Atribut</small> 
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Attributes</li>
+    <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+      <li class="active">Atribut</li>
     </ol>
   </section>
 
@@ -35,24 +35,24 @@
         <?php endif; ?>
 
         <?php //if(in_array('createGroup', $user_permission)): ?>
-          <button class="btn btn-primary" data-toggle="modal" data-target="#addModal" style="background-color: #4e73df; border: none;">Add Attribute</button>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#addModal" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Tambah Atribut</button>
           <br /> <br />
         <?php //endif; ?>
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Attributes</h3>
+            <h3 class="box-title">Kelola Atribut</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Attribute Name</th>
-                <th>Total value</th>
+                <th>Nama Atribut</th>
+                <th>Total Nilai</th>
                 <th>Status</th>
                 <?php //if(in_array('updateGroup', $user_permission) || in_array('deleteGroup', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>Aksi</th>
                 <?php //endif; ?>
               </tr>
               </thead>
@@ -80,7 +80,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Add Attribute</h4>
+        <h4 class="modal-title">Tambah Atribut</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('attributes/create') ?>" method="post" id="createForm">
@@ -88,7 +88,7 @@
         <div class="modal-body">
 
           <div class="form-group">
-            <label for="brand_name">Attribute Name</label>
+            <label for="brand_name">Nama Atributt</label>
             <input type="text" class="form-control" id="attribute_name" name="attribute_name" placeholder="Enter attribute name" autocomplete="off">
           </div>
           <div class="form-group">
@@ -101,8 +101,8 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal" style="background-color: #e74a3b; border: none;">Batal</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan</button>
         </div>
 
       </form>
@@ -118,7 +118,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Edit Store</h4>
+        <h4 class="modal-title">Edit Atribut</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('attributes/update') ?>" method="post" id="updateForm">
@@ -127,7 +127,7 @@
           <div id="messages"></div>
 
           <div class="form-group">
-            <label for="edit_brand_name">Attribute Name</label>
+            <label for="edit_brand_name">Nama Atribut</label>
             <input type="text" class="form-control" id="edit_attribute_name" name="edit_attribute_name" placeholder="Enter attribute name" autocomplete="off">
           </div>
           <div class="form-group">
@@ -140,8 +140,8 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal" style="background-color: #e74a3b; border: none;">Batal</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan Perubahan</button>
         </div>
 
       </form>
@@ -157,21 +157,21 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remove Attribute</h4>
+        <h4 class="modal-title">Hapus Atribut</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('attributes/remove') ?>" method="post" id="removeForm">
         <div class="modal-body">
-          <p>Do you really want to remove?</p>
+          <p>Apakah kamu yakin ingin menghapus atribut ini?</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal" style="background-color: #e74a3b; border: none;">Batal</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Konfirmasi</button>
         </div>
       </form>
 
 
-    </div><!-- /.modal-content -->
+    </div><!-- /.modal-content --> 
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 

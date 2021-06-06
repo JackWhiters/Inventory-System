@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Stores</small>
+      Kelola
+      <small>Toko</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Stores</li>
+      <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+      <li class="active">Toko</li>
     </ol>
   </section>
 
@@ -35,23 +35,23 @@
         <?php endif; ?>
 
         <?php if(in_array('createStore', $user_permission)): ?>
-          <button class="btn btn-primary" data-toggle="modal" data-target="#addModal" style="background-color: #4e73df; border: none;">Add Store</button>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#addModal" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Tambah Toko</button>
           <br /> <br />
         <?php endif; ?>
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Stores</h3>
+            <h3 class="box-title">Kelola Toko</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Store Name</th>
+                <th>Nama Toko</th>
                 <th>Status</th>
                 <?php if(in_array('updateStore', $user_permission) || in_array('deleteStore', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>Aksi</th>
                 <?php endif; ?>
               </tr>
               </thead>
@@ -79,7 +79,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Add Store</h4>
+        <h4 class="modal-title">Tambah Toko</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('stores/create') ?>" method="post" id="createForm">
@@ -87,8 +87,8 @@
         <div class="modal-body">
 
           <div class="form-group">
-            <label for="brand_name">Store Name</label>
-            <input type="text" class="form-control" id="store_name" name="store_name" placeholder="Enter store name" autocomplete="off">
+            <label for="brand_name">Nama Toko</label>
+            <input type="text" class="form-control" id="store_name" name="store_name" placeholder="Masukan Nama Toko" autocomplete="off">
           </div>
           <div class="form-group">
             <label for="active">Status</label>
@@ -100,8 +100,8 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal" style="background: linear-gradient(to right, #d31027, #ea384d); border: none;">Batal</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan</button>
         </div>
 
       </form>
@@ -119,7 +119,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Edit Store</h4>
+        <h4 class="modal-title">Edit Toko</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('stores/update') ?>" method="post" id="updateForm">
@@ -128,8 +128,8 @@
           <div id="messages"></div>
 
           <div class="form-group">
-            <label for="edit_brand_name">Store Name</label>
-            <input type="text" class="form-control" id="edit_store_name" name="edit_store_name" placeholder="Enter store name" autocomplete="off">
+            <label for="edit_brand_name">Nama Toko</label>
+            <input type="text" class="form-control" id="edit_store_name" name="edit_store_name" placeholder="Masukan Nama Toko" autocomplete="off">
           </div>
           <div class="form-group">
             <label for="edit_active">Status</label>
@@ -141,8 +141,8 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal" style="background: linear-gradient(to right, #d31027, #ea384d); border: none;">Batal</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan Perubahan</button>
         </div>
 
       </form>
@@ -160,16 +160,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Remove Store</h4>
+        <h4 class="modal-title">Hapus Toko</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('stores/remove') ?>" method="post" id="removeForm">
         <div class="modal-body">
-          <p>Do you really want to remove?</p>
+          <p>Apakah kamu yakin ingin menghapus toko ini?</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal" style="background: linear-gradient(to right, #d31027, #ea384d); border: none;">Batal</button>
+          <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan Perubahan</button>
         </div>
       </form>
 

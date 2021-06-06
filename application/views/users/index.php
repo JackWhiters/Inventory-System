@@ -5,12 +5,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Users</small>
+        Kelola
+        <small>User</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Users</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+        <li class="active">User</li>
       </ol>
     </section>
 
@@ -33,14 +33,14 @@
           <?php endif; ?>
           
           <?php if(in_array('createUser', $user_permission)): ?>
-            <a href="<?php echo base_url('users/create') ?>" class="btn btn-primary" style="background-color: #4e73df; border: none;">Add User</a>
+            <a href="<?php echo base_url('users/create') ?>" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Tambah User</a>
             <br /> <br />
           <?php endif; ?>
 
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Manage Users</h3>
+              <h3 class="box-title">Kelola User</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -49,12 +49,12 @@
                 <tr>
                   <th>Username</th>
                   <th>Email</th>
-                  <th>Name</th>
-                  <th>Phone</th>
-                  <th>Group</th>
+                  <th>Nama</th>
+                  <th>Telepon</th>
+                  <th>Grup</th>
 
                   <?php if(in_array('updateUser', $user_permission) || in_array('deleteUser', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>Aksi</th>
                   <?php endif; ?>
                 </tr>
                 </thead>

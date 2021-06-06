@@ -8,7 +8,7 @@ class Users extends Admin_Controller
 
 		$this->not_logged_in();
 		
-		$this->data['page_title'] = 'Users';
+		$this->data['page_title'] = 'User';
 		
 
 		$this->load->model('model_users');

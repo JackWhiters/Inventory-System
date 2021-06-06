@@ -5,12 +5,12 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Products</small>
+      Kelola
+      <small>Produk</small>
     </h1>
     <ol class="breadcrumb">
-      <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Products</li>
+      <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+      <li class="active">Produk</li>
     </ol>
   </section>
 
@@ -37,7 +37,7 @@
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Add Product</h3>
+            <h3 class="box-title">Tambah Produk</h3>
           </div>
           <!-- /.box-header -->
           <form role="form" action="<?php base_url('users/create') ?>" method="post" enctype="multipart/form-data">
@@ -47,38 +47,37 @@
 
                 <div class="form-group">
 
-                  <label for="product_image">Image</label>
+                  <label for="product_image">Gambar</label>
                   <div class="kv-avatar">
                       <div class="file-loading">
-                          <input id="product_image" name="product_image" type="file" style="background-color: #4e73df; border: none;">
+                        <input id="product_image" name="product_image" type="file" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">
                       </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="product_name">Product name</label>
-                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Enter product name" autocomplete="off"/>
+                  <label for="product_name">Nama Produk</label>
+                  <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Masukan Nama Produk" autocomplete="off"/>
                 </div>
 
                 <div class="form-group">
                   <label for="sku">SKU</label>
-                  <input type="text" class="form-control" id="sku" name="sku" placeholder="Enter sku" autocomplete="off" />
+                  <input type="text" class="form-control" id="sku" name="sku" placeholder="Masukan sku" autocomplete="off" />
                 </div>
 
                 <div class="form-group">
-                  <label for="price">Price</label>
-                  <input type="text" class="form-control" id="price" name="price" placeholder="Enter price" autocomplete="off" />
+                  <label for="price">Harga</label>
+                  <input type="text" class="form-control" id="price" name="price" placeholder="Masukan Harga" autocomplete="off" />
                 </div>
 
                 <div class="form-group">
                   <label for="qty">Qty</label>
-                  <input type="text" class="form-control" id="qty" name="qty" placeholder="Enter Qty" autocomplete="off" />
+                  <input type="text" class="form-control" id="qty" name="qty" placeholder="Masukan Qty" autocomplete="off" />
                 </div>
 
                 <div class="form-group">
-                  <label for="description">Description</label>
-                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Enter 
-                  description" autocomplete="off">
+                  <label for="description">Deskripsi</label>
+                  <textarea type="text" class="form-control" id="description" name="description" placeholder="Masukan Deskripsi" autocomplete="off">
                   </textarea>
                 </div>
 
@@ -96,7 +95,7 @@
                 <?php endif; ?>
 
                 <div class="form-group">
-                  <label for="brands">Brands</label>
+                  <label for="brands">Merek</label>
                   <select class="form-control select_group" id="brands" name="brands[]" multiple="multiple">
                     <?php foreach ($brands as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
@@ -105,7 +104,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="category">Category</label>
+                  <label for="category">Kategori</label>
                   <select class="form-control select_group" id="category" name="category[]" multiple="multiple">
                     <?php foreach ($category as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
@@ -114,7 +113,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Store</label>
+                  <label for="store">Toko</label>
                   <select class="form-control select_group" id="store" name="store">
                     <?php foreach ($stores as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
@@ -123,7 +122,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Availability</label>
+                  <label for="store">Ketersediaan</label>
                   <select class="form-control" id="availability" name="availability">
                     <option value="1">Yes</option>
                     <option value="2">No</option>
@@ -134,8 +133,8 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary" style="background-color: #4e73df; border: none;">Save Changes</button>
-                <a href="<?php echo base_url('products/') ?>" class="btn btn-warning" style="background-color: #e74a3b; border: none;">Back</a>
+              <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan</button>
+                <a href="<?php echo base_url('products/') ?>" class="btn btn-warning" style="background: linear-gradient(to right, #d31027, #ea384d); border: none;">Batal</a>
               </div>
             </form>
           <!-- /.box-body -->

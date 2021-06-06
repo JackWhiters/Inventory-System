@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/font-awesome/css/font-awesome.min.css') ?>">
   <!-- Ionicons -->
   <link rel="stylesheet" href="<?php echo base_url('assets/bower_components/Ionicons/css/ionicons.min.css') ?>">
+  <!-- Web Icon -->
+  <link rel="icon" href="<?php echo base_url('assets/images/inv.ico') ?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url('assets/dist/css/AdminLTE.min.css') ?>">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -113,6 +115,6 @@
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper" style="background-color: #4e73df;">
+<div class="wrapper" style="background: linear-gradient(to right, #673ab7, #512da8);">
 
   

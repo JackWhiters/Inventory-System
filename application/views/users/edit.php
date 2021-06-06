@@ -5,12 +5,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Manage
-        <small>Users</small>
+        Kelola
+        <small>User</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Users</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Beranda</a></li>
+        <li class="active">User</li>
       </ol>
     </section>
 
@@ -42,9 +42,9 @@
                 <?php echo validation_errors(); ?>
 
                 <div class="form-group">
-                  <label for="groups">Groups</label>
+                  <label for="groups">Grup</label>
                   <select class="form-control" id="groups" name="groups">
-                    <option value="">Select Groups</option>
+                    <option value="">Pilih Grup</option>
                     <?php foreach ($group_data as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>" <?php if($user_group['id'] == $v['id']) { echo 'selected'; } ?> ><?php echo $v['group_name'] ?></option> 
                     <?php endforeach ?>
@@ -62,34 +62,34 @@
                 </div>                
 
                 <div class="form-group">
-                  <label for="fname">First name</label>
-                  <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" value="<?php echo $user_data['firstname'] ?>" autocomplete="off">
+                  <label for="fname">Nama Depan</label>
+                  <input type="text" class="form-control" id="fname" name="fname" placeholder="Nama Depan" value="<?php echo $user_data['firstname'] ?>" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="lname">Last name</label>
-                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" value="<?php echo $user_data['lastname'] ?>" autocomplete="off">
+                  <label for="lname">Nama Belakang</label>
+                  <input type="text" class="form-control" id="lname" name="lname" placeholder="Nama Belakang" value="<?php echo $user_data['lastname'] ?>" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" value="<?php echo $user_data['phone'] ?>" autocomplete="off">
+                  <label for="phone">Telepon</label>
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Telepon" value="<?php echo $user_data['phone'] ?>" autocomplete="off">
                 </div>
 
                 <div class="form-group">
-                  <label for="gender">Gender</label>
+                  <label for="gender">Jenis Kelamin</label>
                   <div class="radio">
                     <label>
                       <input type="radio" name="gender" id="male" value="1" <?php if($user_data['gender'] == 1) {
                         echo "checked";
                       } ?>>
-                      Male
+                      Laki-laki
                     </label>
                     <label>
                       <input type="radio" name="gender" id="female" value="2" <?php if($user_data['gender'] == 2) {
                         echo "checked";
                       } ?>>
-                      Female
+                      Perempuan
                     </label>
                   </div>
                 </div>
@@ -97,7 +97,7 @@
                 <div class="form-group">
                   <div class="alert alert-info alert-dismissible" role="alert">
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      Leave the password field empty if you don't want to change.
+                    Biarkan password kosong jika Anda tidak ingin mengubahnya.
                   </div>
                 </div>
 
@@ -107,16 +107,16 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="cpassword">Confirm password</label>
-                  <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm Password" autocomplete="off">
+                  <label for="cpassword">Konfirmasi password</label>
+                  <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Konfirmasi Password" autocomplete="off">
                 </div>
 
               </div>
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Save Changes</button>
-                <a href="<?php echo base_url('users/') ?>" class="btn btn-warning">Back</a>
+                <button type="submit" class="btn btn-primary" style="background: linear-gradient(to right, #673ab7, #512da8); border: none;">Simpan Perubahan</button>
+                <a href="<?php echo base_url('users/') ?>" class="btn btn-warning" style="background: linear-gradient(to right, #d31027, #ea384d); border: none;">Kembali</a>
               </div>
             </form>
           </div>

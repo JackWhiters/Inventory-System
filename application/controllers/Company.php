@@ -10,7 +10,7 @@ class Company extends Admin_Controller
 
 		$this->not_logged_in();
 
-		$this->data['page_title'] = 'Company';
+		$this->data['page_title'] = 'Perusahaan';
 
 		$this->load->model('model_company');
 	}

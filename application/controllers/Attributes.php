@@ -10,7 +10,7 @@ class Attributes extends Admin_Controller
 
 		$this->not_logged_in();
 
-		$this->data['page_title'] = 'Attributes';
+		$this->data['page_title'] = 'Atribut';
 
 		$this->load->model('model_attributes');
 	}

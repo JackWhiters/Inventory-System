@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="<?php echo base_url('assets/style1.css') ?>" />
-    <title>Sign in & Sign up Form</title>
+    <title>Inventory System</title>
     <!-- Web Icon -->
     <link rel="icon" href="<?php echo base_url('assets/images/inv.ico') ?>">
   </head>

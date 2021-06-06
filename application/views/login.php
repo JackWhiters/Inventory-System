@@ -36,7 +36,7 @@
     
             </form>
             <form action="#" class="sign-up-form">
-              <h2 class="title">Nama Kelompok</h2>
+              <h2 class="title">Nama Anggota Kelompok</h2>
               <tr>
                 <td><h2>Jundi AL Hafidz (2020310084)</h2></td>
                 <td><h2>Fatih Alsena (2020310077)</h2></td>
@@ -55,7 +55,7 @@
             <div class="content">
               <h3>Selamat Datang</h3>
               <p>
-                  Tugas Kelompok Structure Data Pertemuan Ke 12
+                  Tugas Kelompok Structure Data Pertemuan Ke 12 | Bina Insani University
               </p>
               <button class="btn transparent" id="sign-up-btn">
                 LIHAT 

@@ -16,5 +16,5 @@ Annisa Sholehah           (2020310087)
 # Screenshots
 
 ![image](https://user-images.githubusercontent.com/73758793/120925251-f557d180-c701-11eb-994b-dc0e0e4c2632.png)
-![image](https://user-images.githubusercontent.com/73758793/120925265-01dc2a00-c702-11eb-9680-4666ca10986c.png)
+![image](https://user-images.githubusercontent.com/73758793/120951467-11478b80-c773-11eb-94a6-9490bce84a80.png)
 ![image](https://user-images.githubusercontent.com/73758793/120925202-bde92500-c701-11eb-8580-aa81ba804446.png)
